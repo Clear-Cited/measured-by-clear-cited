@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="64" viewBox="0 0 220 64" role="img" aria-label="Measured by Clear Cited">
+  <rect x="0.75" y="0.75" width="218.5" height="62.5" rx="11" fill="#0a0e13" stroke="#1e2630" stroke-width="1.5"></rect>
+  <g transform="translate(16,16)">
+    <rect width="32" height="32" rx="8" fill="#3b82f6"></rect>
+    <g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" transform="scale(0.32)">
+      <path d="M41 26 H32 a6 6 0 0 0 -6 6 V68 a6 6 0 0 0 6 6 H41"></path>
+      <path d="M59 26 H68 a6 6 0 0 1 6 6 V68 a6 6 0 0 1 -6 6 H59"></path>
+      <path d="M39 52 l6.5 8 L60 42"></path>
+    </g>
+  </g>
+  <text x="60" y="27" font-family="Geist,system-ui,sans-serif" font-size="10.5" font-weight="500" letter-spacing="0.5" fill="#94a2b0">MEASURED BY</text>
+  <text x="60" y="45" font-family="Geist,system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="-0.5" fill="#e9eef4">Clear<tspan fill="#3b82f6">Cited</tspan></text>
+</svg>
