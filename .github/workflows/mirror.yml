@@ -1,0 +1,45 @@
+name: Mirror to Codeberg
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  schedule:
+    - cron: "0 4 * * 0"
+  workflow_dispatch:
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Is the Codeberg token present?
+        id: gate
+        env:
+          TOKEN: ${{ secrets.CODEBERG_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::warning::CODEBERG_TOKEN is not set on this repository - skipping the mirror. Add it under Settings > Secrets and variables > Actions to turn this on."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.ready == 'true'
+        with:
+          fetch-depth: 0
+      - uses: cssnr/mirror-repository-action@v1
+        if: steps.gate.outputs.ready == 'true'
+        with:
+          host: https://codeberg.org
+          owner: clear-cited
+          username: clear-cited
+          password: ${{ secrets.CODEBERG_TOKEN }}
+          create: true
+      - name: Verify the mirror actually landed
+        if: steps.gate.outputs.ready == 'true'
+        run: |
+          REPO="${{ github.event.repository.name }}"
+          REMOTE=$(git ls-remote "https://codeberg.org/clear-cited/$REPO.git" "${{ github.ref_name }}" | cut -f1)
+          echo "codeberg=$REMOTE  github=${{ github.sha }}"
+          if [ "$REMOTE" != "${{ github.sha }}" ]; then
+            echo "::error::Mirror did not land - Codeberg does not have this ref."
+            exit 1
+          fi
