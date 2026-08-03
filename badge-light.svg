@@ -1,3 +1,19 @@
+<!--
+  Measured by Clear Cited - badge
+  Copyright (c) 2026 Clear Cited
+  SPDX-License-Identifier: CC-BY-ND-4.0
+
+  Redistribute freely, including commercially, with attribution.
+  Do NOT distribute a modified version. Rescaling and format conversion
+  (e.g. SVG to PNG) are not modifications and are permitted.
+
+  "Clear Cited" and the Clear Cited logo are trademarks. The licence above
+  covers copyright only. Permitted use of the mark:
+  https://github.com/Clear-Cited/measured-by-clear-cited/blob/main/BRAND.md
+
+  NOTE TO MAINTAINERS: this file is generated from logo-lockup.svg.
+  If you regenerate it, re-apply this header.
+-->
 <svg xmlns="http://www.w3.org/2000/svg" width="220" height="64" viewBox="0 0 220 64" role="img" aria-label="Measured by Clear Cited">
   <title>Measured by Clear Cited</title>
   <rect x="0.75" y="0.75" width="218.5" height="62.5" rx="11" fill="#ffffff" stroke="#e3e9f0" stroke-width="1.5"/>
