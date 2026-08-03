@@ -44,4 +44,20 @@ Use it once you've actually measured your AI visibility (e.g. via a free teardow
 
 ## License
 
-MIT © Clear Cited. See [LICENSE](LICENSE). The Clear Cited name and logo are trademarks; the badge links back to clearcited.com.
+**Brand assets — `badge-light.svg`, `badge-dark.svg`, `logo-lockup.svg`**
+`SPDX-License-Identifier: CC-BY-ND-4.0` — see [LICENSE](LICENSE).
+
+Copy and redistribute them anywhere, including commercially, with attribution.
+**Do not distribute a modified version.** That is the point: the badge says a
+measurement was actually run, and a badge anyone can redraw cannot say that.
+Changing format or size is not a modification — SVG to PNG and scaling are
+expressly permitted.
+
+A Creative Commons licence covers copyright only. **"Clear Cited" and the Clear
+Cited logo are trademarks** — [BRAND.md](BRAND.md) is what actually grants you
+permission to display the mark, and sets out the boundaries.
+
+`.github/workflows/mirror.yml` is not a brand asset and stays MIT.
+
+*(GitHub's licence detector does not recognise CC BY-ND, so this repo shows as
+"Other". The SPDX identifier above is the machine-readable answer.)*
