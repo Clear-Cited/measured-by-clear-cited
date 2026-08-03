@@ -1,27 +1,4 @@
-Clear Cited brand assets
 Copyright (c) 2026 Clear Cited
-
-badge-light.svg, badge-dark.svg and logo-lockup.svg are licensed under the
-Creative Commons Attribution-NoDerivatives 4.0 International License
-(CC BY-ND 4.0). The full legal code follows.
-
-You may copy and redistribute these files in any medium or format, including
-commercially, with attribution. You may NOT distribute a modified version.
-That is deliberate: the badge is a statement that a measurement was actually
-run, and a badge anyone can alter cannot carry that meaning.
-
-Format-shifting is not a modification. Converting the SVG to PNG, or scaling
-it, is expressly permitted by section 2(a)(4) of the licence.
-
-TRADEMARKS. "Clear Cited" and the Clear Cited logo are trademarks of Clear
-Cited. This licence covers copyright only and grants no trademark rights --
-see section 2(b)(2). BRAND.md sets out what you may and may not do with the
-mark, and grants the permission that displaying the badge requires.
-
-THE CI WORKFLOW. .github/workflows/mirror.yml is not a brand asset. It is
-made available under the MIT License.
-
------------------------------------------------------------------------
 
 Creative Commons Attribution-NoDerivatives 4.0 International
 
